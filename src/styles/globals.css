@@ -1,0 +1,36 @@
+/* src/styles/globals.css */
+
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom fonts or any additional global styling */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+  font-family: "Inter", sans-serif; /* Using custom font */
+}
+
+/* Custom styles for specific HTML elements */
+h1,
+h2,
+h3,
+h4 {
+  @apply text-gray-900;
+}
+
+/* Example: Tailwind extensions for button styling globally */
+button {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors;
+}
+
+/* Example: input field global styling */
+input {
+  @apply border border-gray-300 rounded-lg p-3 w-full text-black;
+}
